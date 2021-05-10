@@ -11,12 +11,12 @@
 
 ### Example
 
-'''ruby
+```ruby
 def my_method
   puts "hey there"
 end
-'''
+```
 
-'''javascript
+```javascript
 alert('Hey, Hey');
-'''
+```
