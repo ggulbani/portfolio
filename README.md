@@ -18,5 +18,5 @@ end
 '''
 
 '''javascript
-alert('Hey, i'm javascript');
+alert('Hey, Hey');
 '''
