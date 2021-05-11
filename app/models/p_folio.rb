@@ -1,0 +1,2 @@
+class PFolio < ApplicationRecord
+end

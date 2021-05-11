@@ -1,0 +1,2 @@
+class PFoliosController < ApplicationController
+end
