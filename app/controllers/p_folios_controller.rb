@@ -3,6 +3,10 @@ class PFoliosController < ApplicationController
     @portfolio_items = PFolio.all
   end
 
+  def show
+    @portfolio_item = PFolio.find(params[:id])
+  end
+
   def new
     @portfolio_item = PFolio.new
   end
@@ -26,7 +30,7 @@ class PFoliosController < ApplicationController
 
   def update
     @portfolio_item = PFolio.find(params[:id])
-    
+
     respond_to do |format|
       if @portfolio_item.update(params.require(:p_folio).permit(:title, :subtitle, :body))
         format.html { redirect_to p_folios_path, notice: "Portfolio record was successfully updated." }
