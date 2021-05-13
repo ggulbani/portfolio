@@ -4,5 +4,5 @@
   <p> <%= p_item.title %> </p>
   <p> <%= p_item.subtitle %> </p>
   <p> <%= p_item.body %> </p>
-  <p> <%= image_tag p_item.thumb_image %> </p>
+  <p> <%= image_tag p_item.thumb_image if !p_item.thumb_image.nil? %> </p>
 <% end %>  
