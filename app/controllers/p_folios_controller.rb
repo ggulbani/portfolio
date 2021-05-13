@@ -7,6 +7,19 @@ class PFoliosController < ApplicationController
     @portfolio_item = PFolio.find(params[:id])
   end
 
+  def destroy
+    #lookup
+    @portfolio_item = PFolio.find(params[:id])
+
+    #Destroy/delete the record
+    @portfolio_item.destroy
+
+    #Redirect
+    respond_to do |format|
+      format.html {redirect_to p_folios_path, notice: 'Portfolio record was removed.'}
+    end
+  end
+
   def new
     @portfolio_item = PFolio.new
   end
